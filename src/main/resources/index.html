@@ -1,0 +1,222 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/sandstone/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <title>Fluffy Currency!</title>
+</head>
+<body>
+<center>
+    <h1>Fluffy Currency</h1>
+    <h8>Reshma - Smriti - Omar</h8>
+    <h8>CSS 490 Cloud Computing - Winter 2018</h8>
+    <br/>
+
+<form action="/load" method="POST">
+    <div class="row">
+
+        <div class="col-1">
+            <button type="submit" class="btn btn-success">
+                <span class="glyphicons glyphicons-plus-sign"></span> Add
+            </button>
+        </div>
+
+        <div class="col-2">
+            <input type="text" class="form-control" placeholder="Cryptocurrency" id="crypto" name="crypto"
+                   list="cryptoList"/>
+            <datalist id="cryptoList">
+                <option id='bitcoin'>BTC - Bitcoin</option>
+                <option id='ethereum'>ETH - Ethereum</option>
+                <option id='ripple'>XRP - Ripple</option>
+                <option id='bitcoin-cash'>BCH - Bitcoin Cash</option>
+                <option id='litecoin'>LTC - Litecoin</option>
+                <option id='neo'>NEO - NEO</option>
+                <option id='cardano'>ADA - Cardano</option>
+                <option id='stellar'>XLM - Stellar</option>
+                <option id='eos'>EOS - EOS</option>
+                <option id='iota'>MIOTA - IOTA</option>
+                <option id='monero'>XMR - Monero</option>
+                <option id='dash'>DASH - Dash</option>
+                <option id='nem'>XEM - NEM</option>
+                <option id='ethereum-classic'>ETC - Ethereum Classic</option>
+                <option id='tron'>TRX - TRON</option>
+                <option id='vechain'>VEN - VeChain</option>
+                <option id='tether'>USDT - Tether</option>
+                <option id='nano'>NANO - Nano</option>
+                <option id='lisk'>LSK - Lisk</option>
+                <option id='qtum'>QTUM - Qtum</option>
+                <option id='omisego'>OMG - OmiseGO</option>
+                <option id='bitcoin-gold'>BTG - Bitcoin Gold</option>
+                <option id='icon'>ICX - ICON</option>
+                <option id='zcash'>ZEC - Zcash</option>
+                <option id='binance-coin'>BNB - Binance Coin</option>
+                <option id='digixdao'>DGD - DigixDAO</option>
+                <option id='verge'>XVG - Verge</option>
+                <option id='populous'>PPT - Populous</option>
+                <option id='bytecoin-bcn'>BCN - Bytecoin</option>
+                <option id='steem'>STEEM - Steem</option>
+                <option id='stratis'>STRAT - Stratis</option>
+                <option id='siacoin'>SC - Siacoin</option>
+                <option id='dogecoin'>DOGE - Dogecoin</option>
+                <option id='waves'>WAVES - Waves</option>
+                <option id='rchain'>RHOC - RChain</option>
+                <option id='maker'>MKR - Maker</option>
+                <option id='bitshares'>BTS - BitShares</option>
+                <option id='aeternity'>AE - Aeternity</option>
+                <option id='decred'>DCR - Decred</option>
+                <option id='status'>SNT - Status</option>
+                <option id='augur'>REP - Augur</option>
+                <option id='0x'>ZRX - 0x</option>
+                <option id='waltonchain'>WTC - Waltonchain</option>
+                <option id='electroneum'>ETN - Electroneum</option>
+                <option id='veritaseum'>VERI - Veritaseum</option>
+                <option id='komodo'>KMD - Komodo</option>
+                <option id='hshare'>HSR - Hshare</option>
+                <option id='revain'>R - Revain</option>
+                <option id='kucoin-shares'>KCS - KuCoin Shares</option>
+                <option id='gas'>GAS - Gas</option>
+                <option id='basic-attention-token'>BAT - Basic Attention Token</option>
+                <option id='ardor'>ARDR - Ardor</option>
+                <option id='ark'>ARK - Ark</option>
+                <option id='digibyte'>DGB - DigiByte</option>
+                <option id='golem-network-tokens'>GNT - Golem</option>
+                <option id='bytom'>BTM - Bytom</option>
+                <option id='dragonchain'>DRGN - Dragonchain</option>
+                <option id='syscoin'>SYS - Syscoin</option>
+                <option id='cryptonex'>CNX - Cryptonex</option>
+                <option id='zilliqa'>ZIL - Zilliqa</option>
+                <option id='pivx'>PIVX - PIVX</option>
+                <option id='ethos'>ETHOS - Ethos</option>
+                <option id='monacoin'>MONA - MonaCoin</option>
+                <option id='loopring'>LRC - Loopring</option>
+                <option id='aion'>AION - Aion</option>
+                <option id='aelf'>ELF - aelf</option>
+                <option id='nebulas-token'>NAS - Nebulas</option>
+                <option id='factom'>FCT - Factom</option>
+                <option id='qash'>QASH - QASH</option>
+                <option id='funfair'>FUN - FunFair</option>
+                <option id='byteball'>GBYTE - Byteball Bytes</option>
+                <option id='reddcoin'>RDD - ReddCoin</option>
+                <option id='kyber-network'>KNC - Kyber Network</option>
+                <option id='dent'>DENT - Dent</option>
+                <option id='nexus'>NXS - Nexus</option>
+                <option id='gxshares'>GXS - GXShares</option>
+                <option id='polymath-network'>POLY - Polymath</option>
+                <option id='bitcore'>BTX - Bitcore</option>
+                <option id='iostoken'>IOST - IOStoken</option>
+                <option id='chainlink'>LINK - ChainLink</option>
+                <option id='zcoin'>XZC - ZCoin</option>
+                <option id='salt'>SALT - SALT</option>
+                <option id='particl'>PART - Particl</option>
+                <option id='dentacoin'>DCN - Dentacoin</option>
+                <option id='kin'>KIN - Kin</option>
+                <option id='power-ledger'>POWR - Power Ledger</option>
+                <option id='bancor'>BNT - Bancor</option>
+                <option id='neblio'>NEBL - Neblio</option>
+                <option id='nxt'>NXT - Nxt</option>
+                <option id='blocknet'>BLOCK - Blocknet</option>
+                <option id='request-network'>REQ - Request Network</option>
+                <option id='enigma-project'>ENG - Enigma</option>
+                <option id='singularitynet'>AGI - SingularityNET</option>
+                <option id='smartcash'>SMART - SmartCash</option>
+                <option id='tenx'>PAY - TenX</option>
+                <option id='maidsafecoin'>MAID - MaidSafeCoin</option>
+                <option id='vertcoin'>VTC - Vertcoin</option>
+                <option id='cindicator'>CND - Cindicator</option>
+                <option id='pillar'>PLR - Pillar</option>
+                <option id='gnosis-gno'>GNO - Gnosis</option>
+
+            </datalist>
+        </div>
+        <div class="col-1">
+            <input type="number" class="form-control" placeholder="Quantity" id="qty" name="qty" min="0"/>
+        </div>
+        <div class="col-1">
+            <input type="number" class="form-control" placeholder="Price Purchased" id="price" name="price" min="0"
+                   step=".01">
+        </div>
+    </div>
+</form>
+</center>
+<br/><br/>
+
+<button class="btn btn-info" data-toggle="collapse" data-target="#port">Portfolio Report</button>
+
+<div id="port" class="collapse">
+    This will expand their portfolio details....
+
+
+</div><br/><br/>
+
+<button class="btn btn-info" data-toggle="collapse" data-target="#pie">Pie Chart</button>
+
+<div id="pie" class="collapse">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="piechart" style="width: 1200px; height: 700px;"></div>
+    <script src="js/pieChart.js"></script>
+
+</div><br/><br/>
+
+<button class="btn btn-info" data-toggle="collapse" data-target="#trans">Transactions Detail</button>
+
+<div id="trans" class="collapse">
+    This is where the transactions details will be shown....
+
+
+</div><br/><br/>
+
+
+<!-- Optional JavaScript -->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDg4YOeSj8Jv4JZ__lPEcDtyiOcXgOcdDg",
+        authDomain: "fluffycurrency.firebaseapp.com",
+        databaseURL: "https://fluffycurrency.firebaseio.com",
+        projectId: "fluffycurrency",
+        storageBucket: "",
+        messagingSenderId: "423869408309"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<!-- Authenticator-->
+<script src="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.css" />
+
+<!-- Firebase tools -->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

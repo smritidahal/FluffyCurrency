@@ -1,0 +1,78 @@
+[debug] [2018-03-02T23:22:48.817Z] ----------------------------------------------------------------------
+[debug] [2018-03-02T23:22:48.819Z] Command:       /Users/omars/.sprinter/zillow/features/nvm/versions/node/v8.9.3/bin/node /Users/omars/.sprinter/zillow/features/nvm/versions/node/v8.9.3/bin/firebase serve
+[debug] [2018-03-02T23:22:48.819Z] CLI Version:   3.17.4
+[debug] [2018-03-02T23:22:48.819Z] Platform:      darwin
+[debug] [2018-03-02T23:22:48.819Z] Node Version:  v8.9.3
+[debug] [2018-03-02T23:22:48.820Z] Time:          Fri Mar 02 2018 15:22:48 GMT-0800 (PST)
+[debug] [2018-03-02T23:22:48.820Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-02T23:22:48.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-02T23:22:48.833Z] > authorizing via signed-in user
+[debug] [2018-03-02T23:22:48.834Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fluffycurrency  
+  
+ Fri Mar 02 2018 15:22:48 GMT-0800 (PST)
+[debug] [2018-03-02T23:22:49.367Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:22:49.368Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fluffycurrency/tokens  
+  
+ Fri Mar 02 2018 15:22:49 GMT-0800 (PST)
+[debug] [2018-03-02T23:22:49.867Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/omars/Google Drive/Education'...
+[info] 
+[debug] [2018-03-02T23:22:49.870Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fluffycurrency  
+  
+ Fri Mar 02 2018 15:22:49 GMT-0800 (PST)
+[debug] [2018-03-02T23:22:50.141Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:22:50.141Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/423869408309/clients/_:getWebAppConfig  
+  
+ Fri Mar 02 2018 15:22:50 GMT-0800 (PST)
+[debug] [2018-03-02T23:22:50.513Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:22:50.531Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/Users/omars/.sprinter/zillow/features/nvm/versions/node/v8.9.3/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-02T23:27:36.704Z] ----------------------------------------------------------------------
+[debug] [2018-03-02T23:27:36.706Z] Command:       /Users/omars/.sprinter/zillow/features/nvm/versions/node/v8.9.3/bin/node /Users/omars/.sprinter/zillow/features/nvm/versions/node/v8.9.3/bin/firebase serve
+[debug] [2018-03-02T23:27:36.707Z] CLI Version:   3.17.4
+[debug] [2018-03-02T23:27:36.707Z] Platform:      darwin
+[debug] [2018-03-02T23:27:36.707Z] Node Version:  v8.9.3
+[debug] [2018-03-02T23:27:36.707Z] Time:          Fri Mar 02 2018 15:27:36 GMT-0800 (PST)
+[debug] [2018-03-02T23:27:36.707Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-02T23:27:36.721Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-02T23:27:36.721Z] > authorizing via signed-in user
+[debug] [2018-03-02T23:27:36.724Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fluffycurrency  
+  
+ Fri Mar 02 2018 15:27:36 GMT-0800 (PST)
+[debug] [2018-03-02T23:27:37.092Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:27:37.093Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fluffycurrency/tokens  
+  
+ Fri Mar 02 2018 15:27:37 GMT-0800 (PST)
+[debug] [2018-03-02T23:27:37.618Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/omars/Google Drive/Education'...
+[info] 
+[debug] [2018-03-02T23:27:37.621Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fluffycurrency  
+  
+ Fri Mar 02 2018 15:27:37 GMT-0800 (PST)
+[debug] [2018-03-02T23:27:37.910Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:27:37.911Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/423869408309/clients/_:getWebAppConfig  
+  
+ Fri Mar 02 2018 15:27:37 GMT-0800 (PST)
+[debug] [2018-03-02T23:27:38.197Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:27:38.213Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/Users/omars/.sprinter/zillow/features/nvm/versions/node/v8.9.3/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
