@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Education.iml" filepath="$PROJECT_DIR$/.idea/modules/Education.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlufflyCurrency.iml" filepath="$PROJECT_DIR$/.idea/modules/FlufflyCurrency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlufflyCurrency_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FlufflyCurrency_main.iml" group="FlufflyCurrency" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlufflyCurrency_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FlufflyCurrency_test.iml" group="FlufflyCurrency" />
     </modules>
   </component>
 </project>

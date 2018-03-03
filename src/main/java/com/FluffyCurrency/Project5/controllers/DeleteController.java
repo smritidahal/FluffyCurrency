@@ -19,7 +19,6 @@ public class DeleteController {
     public RedirectView delete(RedirectAttributes attributes) {
 
 
-
         attributes.addAttribute("deleteSuccess", true);
 
         attributes.addAttribute("isDelete", true);
