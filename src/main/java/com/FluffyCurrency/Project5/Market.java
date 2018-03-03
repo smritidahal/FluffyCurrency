@@ -1,8 +1,6 @@
 package com.FluffyCurrency.Project5;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -14,48 +12,35 @@ import java.net.URL;
 
 //API CALLS TO COINMARKETCAP.COM
 
-
 @Component
 public class Market {
 
     public double getCurrentPrice(String cryptoID) throws MalformedURLException, IOException {
-
-        String requestEndpoint = urlMaker(cryptoID);
-
-        URL url = new URL(requestEndpoint);
-        HttpURLConnection request = (HttpURLConnection) url.openConnection();
-        request.connect();
-
-
-
         try {
 
-            JsonParser jp = new JsonParser();
-            JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+            URL url = new URL(String.format("https://api.coinmarketcap.com/v1/ticker/%s/", cryptoID));
+            HttpURLConnection request = (HttpURLConnection) url.openConnection();
+            request.connect();
 
-            String price = root.getAsString();
-            System.out.println(price);
+            Gson gson = new Gson();
+            CryptoCoin[] arr = gson.fromJson(new InputStreamReader((InputStream) request.getContent()),
+                    CryptoCoin[].class);
 
+            return arr[0].price_usd;
 
-            String crypto = root.getAsString();
-
-            String cryptoJSON = crypto.substring(1,crypto.length()-1);
-            JsonElement crypoRoot = jp.parse(cryptoJSON);
-            return crypoRoot.getAsJsonObject().get("price_usd").getAsDouble();
-
-
-        } catch (Exception e) {
-            System.out.println("***crypto Not Found***\n\n");
+        } catch (MalformedURLException e) {
+            System.out.println("*** BAD API URL CALL IN MARKET **\n\n");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("*** HTTP CONNECTION FAILED IN MARKET **\n\n");
             e.printStackTrace();
         }
 
-        return 0.0;
+        return -1.0;
     }
 
-    private String urlMaker(String input) {
+}
 
-        return String.format("https://api.coinmarketcap.com/v1/ticker/%s/", input);
-    }
-
-
+class CryptoCoin {
+    double price_usd;
 }
