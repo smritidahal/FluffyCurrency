@@ -3,7 +3,6 @@ package com.FluffyCurrency.Project5;
 import org.springframework.stereotype.Component;
 
 //com.FluffyCurrency.Project5.Transaction saves transaction details the user.
-@Component
 public class Transaction {
 
     private String cryptoID;

@@ -17,6 +17,10 @@ public class DynamoDBService {
         return true;
     }
 
+    public boolean removeAllTransFromDB() {
+
+        return true;
+    }
 
     public boolean loadFavToDB() {
 
@@ -25,6 +29,12 @@ public class DynamoDBService {
     }
 
     public boolean removeFavFromDB() {
+
+
+        return true;
+    }
+
+    public boolean removeAllFavFromDB() {
 
 
         return true;
