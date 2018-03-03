@@ -1,7 +1,6 @@
 
 package com.FluffyCurrency.Project5.controllers;
 
-import com.osarhan.program4.DataLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,20 +12,14 @@ import org.springframework.web.servlet.view.RedirectView;
 @RequestMapping("/load")
 public class LoadController {
 
-    @Autowired
-    private DataLoader dataLoader;
 
     @RequestMapping
     public RedirectView doLoad(@RequestParam("url") String url, RedirectAttributes attributes) {
 
         //Logic goes
-        boolean statusS3 = dataLoader.loadDataToS3(url);
 
-        boolean statusDB = dataLoader.loadDataToDB(url);
-
-
-        attributes.addAttribute("successS3", statusS3);
-        attributes.addAttribute("successDB", statusDB);
+        attributes.addAttribute("successS3", true);
+        attributes.addAttribute("successDB", true);
 
         attributes.addAttribute("isLoadData", true);
 
@@ -34,7 +27,6 @@ public class LoadController {
         return new RedirectView("/");
 
     }
-
 
 
 }

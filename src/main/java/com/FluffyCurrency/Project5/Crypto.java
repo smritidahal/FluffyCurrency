@@ -2,12 +2,10 @@ package com.FluffyCurrency.Project5;// this is a crypto object that stores the e
 
 import org.springframework.stereotype.Component;
 
-
-@Component
 public class Crypto {
 
-    private CryptoType cryptoType;
-    public Crypto(CryptoType cryptoType){
+    public String cryptoType;
+    public Crypto(String cryptoType){
         this.cryptoType = cryptoType;
     }
 
