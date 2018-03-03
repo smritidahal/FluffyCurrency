@@ -25,7 +25,7 @@ public class FormController {
     }
 
     @PostMapping("/")
-    public String processPost(@RequestParam("CytpoID") String cryptoID,
+    public String processPost(@RequestParam("cytpoID") String cryptoID,
                               @RequestParam("price") double price,
                               @RequestParam("amount") double amount,
                               final Model model) {
